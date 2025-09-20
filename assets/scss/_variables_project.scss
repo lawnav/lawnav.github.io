@@ -7,6 +7,7 @@ Add styles or override variables from the theme here.
 /* 主要和次要配色 */
 $primary: #c32136;
 $secondary: #8c4356;
+$td-enable-google-fonts: true;
 
 .pagination a {
   margin: 0 5px;
@@ -179,8 +180,9 @@ $secondary: #8c4356;
 
 /* 引用块 → 楷体 */
 .td-content blockquote {
-  margin: 2rem auto;
-  margin-bottom: 3rem;
+  margin: 2rem auto !important;
+  width: 95%;
+  max-width: 95%;
 }
 
 .td-content blockquote,
@@ -210,10 +212,22 @@ $secondary: #8c4356;
   line-height: 1.5;
 }
 
-.td-content .two-lines > span {
+.td-content .two-lines>span {
   width: 100%;
   white-space: nowrap;
   text-align: justify;
   text-align-last: justify;
   -moz-text-align-last: justify;
+}
+
+.td-content header ul,
+.td-content header p,
+.td-content header h5 {
+  font-family: var(--font-family-sans-serif) !important;
+  font-size: unset !important;
+  font-weight: unset !important;
+}
+
+.td-content hr {
+  margin: 2rem auto;
 }

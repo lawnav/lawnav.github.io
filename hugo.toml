@@ -46,6 +46,10 @@ taxonomyCloudTitle = ["【标签】", "【分类】"]
 # set taxonomyPageHeader = [] to hide taxonomies on the page headers
 taxonomyPageHeader = ["tags", "categories"]
 taxonomyPageHeaderTitle = ["标签", "分类"]
+tag = "标签"
+category = "分类"
+tags = "标签"
+categories = "分类"
 
 # Highlighting config
 pygmentsCodeFences = true
