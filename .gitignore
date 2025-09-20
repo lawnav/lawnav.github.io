@@ -1,0 +1,20 @@
+/public
+resources/
+node_modules/
+package-lock.json
+.hugo_build.lock
+
+# macos
+.DS_Store
+
+# linux
+*~
+
+# ide
+.vscode/
+.idea/
+
+# local
+.trash/
+trash/
+temp/
