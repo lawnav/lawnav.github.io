@@ -4,7 +4,7 @@ linkTitle: 法律
 type: "docs"
 cascade:
   type: "docs"
-menu: {main: {weight: 11 }}
+menu: {main: {weight: 1 }}
 ---
 
 <details class="doc-details">
