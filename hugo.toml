@@ -1,4 +1,4 @@
-baseURL = 'https://qundao.github.io/laws'
+baseURL = 'https://qundao.github.io/law-book'
 title = '中国法律法规在线文库'
 # 语言设置
 languageCode = "zh-cn"
