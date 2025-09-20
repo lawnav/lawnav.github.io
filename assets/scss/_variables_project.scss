@@ -202,3 +202,18 @@ $secondary: #8c4356;
   text-align: center;
   font-size: x-large;
 }
+
+.td-content .two-lines {
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+.td-content .two-lines > span {
+  width: 100%;
+  white-space: nowrap;
+  text-align: justify;
+  text-align-last: justify;
+  -moz-text-align-last: justify;
+}
