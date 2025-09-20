@@ -47,6 +47,7 @@ jobs:
           pnpm i
           hugo mod get -u && hugo mod tidy
           hugo --gc --minify
+          cp -rf public/favicon.ico public/favicons/
 
       - name: Setup pages
         uses: actions/configure-pages@v4
