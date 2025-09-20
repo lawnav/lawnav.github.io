@@ -1,0 +1,21 @@
+{{ $context := . -}}
+{{ if .Site.Params.Taxonomy -}}
+  {{ if .Site.Params.Taxonomy.taxonomyPageHeader -}}
+    {{ range $index, $taxo := .Site.Params.Taxonomy.taxonomyPageHeader -}}
+    	{{ if $.Site.Params.Taxonomy.taxonomyPageHeaderTitle -}}
+				{{ $.Scratch.Set "title" (index $.Site.Params.Taxonomy.taxonomyPageHeaderTitle $index) -}}
+			{{ else -}}
+				{{ $.Scratch.Set "title" (humanize $taxo) -}}
+			{{ end -}}
+      {{ partial "taxonomy_terms_article.html" (dict "context" $context "taxo" $taxo "title" ($.Scratch.Get "title")) -}}
+    {{ end }}
+  {{ else -}}
+    {{ range $taxo, $taxo_map := .Site.Taxonomies -}}
+      {{ partial "taxonomy_terms_article.html" (dict "context" $context "taxo" $taxo "title" (humanize $taxo)) -}}
+    {{ end }}
+  {{ end -}}
+{{ else -}}
+  {{ range $taxo, $taxo_map := .Site.Taxonomies -}}
+    {{ partial "taxonomy_terms_article.html" (dict "context" $context "taxo" $taxo "title" (humanize $taxo)) -}}
+  {{ end }}
+{{ end -}}

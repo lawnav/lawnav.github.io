@@ -1,0 +1,204 @@
+/*
+
+Add styles or override variables from the theme here.
+
+*/
+
+/* 主要和次要配色 */
+$primary: #c32136;
+$secondary: #8c4356;
+
+.pagination a {
+  margin: 0 5px;
+  padding: 4px 8px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.pagination a.active {
+  font-weight: bold;
+  background-color: #eee;
+}
+
+.pagination span {
+  margin: 0 3px;
+}
+
+.doc-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+.doc-table th,
+.doc-table td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+}
+
+.doc-table th {
+  background-color: #f5f5f5;
+  text-align: left;
+}
+
+.doc-table a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.doc-table a:hover {
+  text-decoration: underline;
+}
+
+/* 基础样式 */
+.doc-details {
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+  transition: all 0.3s ease;
+}
+
+/* 鼠标悬停效果 */
+.doc-details:hover {
+  border-color: #007bff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* summary 样式 */
+.doc-details summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #007bff;
+  list-style: none;
+  /* 去掉默认箭头 */
+  position: relative;
+  padding-left: 1.5em;
+}
+
+/* 自定义箭头 */
+.doc-details summary::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+/* 展开时箭头旋转 */
+.doc-details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+/* 内容区域 */
+.doc-details p,
+.doc-details div,
+.doc-details ul {
+  margin: 0.5em 0 0 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.law-status {
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.law-status.pending {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.law-status.active {
+  background-color: #28a745;
+}
+
+.law-status.amended {
+  background-color: #17a2b8;
+}
+
+.law-status.repealed {
+  background-color: #dc3545;
+}
+
+.law-status.unknown {
+  background-color: #6c757d;
+}
+
+/* 隐藏列表点号 */
+.td-content li {
+  list-style: none;
+}
+
+.td-content li::before {
+  content: "";
+}
+
+.td-content>p {
+  text-indent: 2rem;
+}
+
+.doc-info {
+  margin: 2rem 2rem;
+}
+
+.td-content p,
+.td-content ul,
+.td-content table tbody {
+  font-family: "FangSong", "STFangsong", "仿宋", "SimSun", "宋体", "STSong",
+    "Noto Serif CJK SC", serif;
+  font-weight: normal;
+
+}
+
+.td-content p {
+  font-size: larger;
+}
+
+/* 标题（h1~h6）和加粗文字（strong, b）→ 黑体 */
+.td-content h1,
+.td-content h2,
+.td-content h3,
+.td-content h4,
+.td-content h5,
+.td-content h6,
+.td-content strong,
+.td-content b {
+  font-family: "SimHei", "PingFang SC", "Noto Sans CJK SC", "STHeiti",
+    "Heiti SC", "黑体", "Microsoft YaHei", "WenQuanYi Micro Hei", "微软雅黑",
+    sans-serif;
+  font-weight: bold;
+}
+
+/* 引用块 → 楷体 */
+.td-content blockquote {
+  margin: 2rem auto;
+  margin-bottom: 3rem;
+}
+
+.td-content blockquote,
+.td-content blockquote p {
+  font-family: "KaiTi", "STKaiti", "Kai", "楷体", "BiaoKai", "Noto Serif CJK SC",
+    serif;
+}
+
+/* 可选：引用块内加粗文字仍保持楷体，但加粗 */
+.td-content blockquote strong,
+.td-content blockquote b {
+  font-family: "KaiTi", "STKaiti", "Kai", "楷体", "BiaoKai", "Noto Serif CJK SC",
+    serif;
+  font-weight: bold;
+}
+
+.td-content header+p strong {
+  display: block;
+  text-align: center;
+  font-size: x-large;
+}
