@@ -138,7 +138,7 @@ sidebar_cache_limit = 1000
 # sidebar_menu_truncate=1000
 sidebar_search_disable = false
 showLightDarkModeMenu = true
-footer_about_enable = true
+footer_about_enable = false
 # navbar_logo = "/img/logo.png"
 [params.ui.feedback]
 enable = true

@@ -8,7 +8,7 @@ menu: {main: {weight: 11 }}
 ---
 
 <details class="doc-details">
-<summary><strong>法律</strong>统计：共有699件，其中有有效共343件</summary>
+<summary><strong>法律</strong>统计：共有699件，其中有效共343件</summary>
 {{% pageinfo %}}
 
 **法律**说明：

@@ -8,7 +8,7 @@ menu: {main: {weight: 13 }}
 ---
 
 <details class="doc-details">
-<summary><strong>监察法规</strong>统计：共有2件，其中有有效共1件</summary>
+<summary><strong>监察法规</strong>统计：共有2件，其中有效共1件</summary>
 {{% pageinfo %}}
 
 **监察法规**说明：

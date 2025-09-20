@@ -56,7 +56,7 @@ $secondary: #8c4356;
   padding: 0.5em 1em;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background: #fafafa;
+  background: var(--bs-body-bg);
   transition: all 0.3s ease;
 }
 

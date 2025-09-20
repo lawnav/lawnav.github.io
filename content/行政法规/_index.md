@@ -8,7 +8,7 @@ menu: {main: {weight: 12 }}
 ---
 
 <details class="doc-details">
-<summary><strong>行政法规</strong>统计：共有794件，其中有有效共603件</summary>
+<summary><strong>行政法规</strong>统计：共有794件，其中有效共603件</summary>
 {{% pageinfo %}}
 
 **行政法规**说明：

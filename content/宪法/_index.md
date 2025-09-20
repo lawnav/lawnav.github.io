@@ -8,7 +8,7 @@ menu: {main: {weight: 10 }}
 ---
 
 <details class="doc-details">
-<summary><strong>宪法</strong>统计：共有7件，其中有有效共7件</summary>
+<summary><strong>宪法</strong>统计：共有7件，其中有效共7件</summary>
 {{% pageinfo %}}
 
 **宪法**说明：

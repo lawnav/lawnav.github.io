@@ -8,7 +8,7 @@ menu: {main: {weight: 14 }}
 ---
 
 <details class="doc-details">
-<summary><strong>司法解释</strong>统计：共有866件，其中有有效共552件</summary>
+<summary><strong>司法解释</strong>统计：共有866件，其中有效共552件</summary>
 {{% pageinfo %}}
 
 **司法解释**说明：
