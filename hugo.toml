@@ -35,21 +35,27 @@ disable = false
 [taxonomies]
 tag = "tags"
 category = "categories"
+year = "years"
+keyword = "keywords"
 
 [params.taxonomy]
 # set taxonomyCloud = [] to hide taxonomy clouds
-taxonomyCloud = ["tags", "categories"]
+taxonomyCloud = ["tags", "categories", "years", "keywords"]
 
 # If used, must have same length as taxonomyCloud
-taxonomyCloudTitle = ["【标签】", "【分类】"]
+taxonomyCloudTitle = ["【标签】", "【分类】", "【年份】", "【关键词】"]
 
 # set taxonomyPageHeader = [] to hide taxonomies on the page headers
-taxonomyPageHeader = ["tags", "categories"]
-taxonomyPageHeaderTitle = ["标签", "分类"]
+taxonomyPageHeader = ["tags", "categories", "years", "keywords"]
+taxonomyPageHeaderTitle = ["标签", "分类", "年份", "关键词"]
 tag = "标签"
 category = "分类"
 tags = "标签"
 categories = "分类"
+year = "年份"
+years = "年份"
+keyword = "关键词"
+keywords = "关键词"
 
 # Highlighting config
 pygmentsCodeFences = true
@@ -127,7 +133,7 @@ offlineSearch = true
 prism_syntax_highlighting = true
 
 [params.copyright]
-authors = "群岛/Qundao | 主题 [Hugo](https://gohugo.io/) | 主题 [Docsy](https://www.docsy.dev/)"
+authors = "群岛/Qundao | 建站 [Hugo](https://gohugo.io/) | 主题 [Docsy](https://www.docsy.dev/)"
 from_year = 2025
 
 # User interface configuration
