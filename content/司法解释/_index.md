@@ -4,7 +4,7 @@ linkTitle: 司法解释
 type: "docs"
 cascade:
   type: "docs"
-menu: {main: {weight: 4 }}
+menu: {main: {weight: 5 }}
 ---
 
 <details class="doc-details">
