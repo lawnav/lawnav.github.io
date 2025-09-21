@@ -145,6 +145,8 @@ sidebar_cache_limit = 1000
 sidebar_search_disable = false
 showLightDarkModeMenu = true
 footer_about_enable = false
+sidebar_menu_truncate=2000
+
 # navbar_logo = "/img/logo.png"
 [params.ui.feedback]
 enable = true
@@ -154,6 +156,9 @@ no = '很遗憾，如有问题请访问 🔗<a href="https://github.com/qundao/l
 [params.ui.readingtime]
 enable = true
 
+[params.page]
+pageSize = 50 # list页面每页项数
+
 # [params.links]
 # # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 # # [[params.links.user]]
@@ -161,3 +166,7 @@ enable = true
 # #   url = "https://example.org/mail"
 # #   icon = "fa fa-envelope"
 # #   desc = "Discussion and help from your fellow users"
+
+[services]
+  [services.disqus]
+    shortname = 'lawnav'
