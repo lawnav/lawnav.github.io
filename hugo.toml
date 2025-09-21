@@ -122,6 +122,8 @@ section = ["HTML", "RSS"] # "print",
 
 # Enable Lunr.js offline search
 offlineSearch = true
+offlineSearchSummaryLength = 200
+offlineSearchMaxResults = 25
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = true

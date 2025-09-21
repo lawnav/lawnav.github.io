@@ -1,22 +1,30 @@
 ---
 title: 中国法律法规在线文库
+description: "法律法规在线阅读"
 ---
 
 {{< blocks/cover title="中国法律法规" image_anchor="top" height="full" >}}
 
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="法律/ff808081729d1efe01729d50b5c500bf">
-  查看民法典 <i class="fas fa-arrow-alt-circle-right ms-2"></i>
-</a>
+{{% param description %}}
+{.display-6}
 
-<a class="btn btn-lg btn-primary me-3 mb-4" href="宪法/2c909fdd678bf17901678bf5a483004b/">
-  查看宪法 <i class="fas fa-arrow-alt-circle-right ms-2"></i>
-</a>
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="法律/ff808081729d1efe01729d50b5c500bf">查阅《民法典》 <i class="fas fa-arrow-alt-circle-right ms-2"></i></a>
+<a class="btn btn-lg btn-primary me-3 mb-4" href="宪法/2c909fdd678bf17901678bf5a483004b/">查阅《宪法》 <i class="fas fa-arrow-alt-circle-right ms-2"></i></a>
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="法律/ff808181796a636a0179822a19640c92">查阅《刑法》 <i class="fas fa-arrow-alt-circle-right ms-2"></i></a>
+{.p-initial .my-2}
 
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="法律/ff808181796a636a0179822a19640c92">
-  查看刑法 <i class="fas fa-arrow-alt-circle-right ms-2"></i>
-</a>
+<br>
+
+<a class="btn btn-secondary me-3 mb-4" href="法律/ff8081818c9108eb018cb6922f750c07">公司法 <i class="fa-solid fa-section"></i></a>
+<a class="btn btn-secondary me-3 mb-4" href="法律/ff8080816f135f46016f20f16ee11737">劳动法 <i class="fa-solid fa-section"></i></a>
+<a class="btn btn-secondary me-3 mb-4" href="法律/2c909fdd678bf17901678bf74d7106b3">劳动合同法 <i class="fa-solid fa-section"></i></a>
+<a class="btn btn-secondary me-3 mb-4" href="法律/ff8081818a21dc13018b425303b7086d">民事诉讼法 <i class="fa-solid fa-section"></i></a>
+<a class="btn btn-secondary me-3 mb-4" href="法律/2c909fdd678bf17901678bf7670606ef">消费者权益保护法 <i class="fa-solid fa-section"></i></a>
+<a class="btn btn-secondary me-3 mb-4" href="法律/ff8081817ab231eb017abd617ef70519">道路交通安全法 <i class="fa-solid fa-section"></i></a>
+{.my-1}
 
 <p class="lead mt-5">采集自公开网站数据，文本如有不一致（包含失效和已修改文本），请以法律规定的标准文本为准</p>
+
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
 

@@ -9,6 +9,15 @@ $primary: #c32136;
 $secondary: #8c4356;
 $td-enable-google-fonts: true;
 
+/* 字体 */
+$font-kai: "KaiTi", "STKaiti", "Kai", "楷体", "BiaoKai", "BiaoKai SC",
+  "Kaiti SC", "Noto Serif CJK SC", "Noto Serif SC", cursive, serif;
+$font-sans: "PingFang SC", "SimHei", "黑体", "Microsoft YaHei", "微软雅黑",
+  "STHeiti", "Heiti SC", "Hiragino Sans GB", "WenQuanYi Micro Hei",
+  "Noto Sans CJK SC", "Noto Sans SC", sans-serif;
+$font-serif: "FangSong", "STFangsong", "仿宋", "SimSun", "STSong", "宋体",
+  "NSimSun", "Songti SC", "Noto Serif CJK SC", "Noto Serif SC", serif;
+
 .pagination a {
   margin: 0 5px;
   padding: 4px 8px;
@@ -142,7 +151,7 @@ $td-enable-google-fonts: true;
   content: "";
 }
 
-.td-content>p {
+.td-content > p {
   text-indent: 2rem;
 }
 
@@ -153,10 +162,7 @@ $td-enable-google-fonts: true;
 .td-content p,
 .td-content ul,
 .td-content table tbody {
-  font-family: "FangSong", "STFangsong", "仿宋", "SimSun", "宋体", "STSong",
-    "Noto Serif CJK SC", serif;
-  font-weight: normal;
-
+  font-family: $font-serif;
 }
 
 .td-content p {
@@ -172,9 +178,7 @@ $td-enable-google-fonts: true;
 .td-content h6,
 .td-content strong,
 .td-content b {
-  font-family: "SimHei", "PingFang SC", "Noto Sans CJK SC", "STHeiti",
-    "Heiti SC", "黑体", "Microsoft YaHei", "WenQuanYi Micro Hei", "微软雅黑",
-    sans-serif;
+  font-family: $font-sans;
   font-weight: bold;
 }
 
@@ -187,19 +191,17 @@ $td-enable-google-fonts: true;
 
 .td-content blockquote,
 .td-content blockquote p {
-  font-family: "KaiTi", "STKaiti", "Kai", "楷体", "BiaoKai", "Noto Serif CJK SC",
-    serif;
+  font-family: $font-kai;
 }
 
 /* 可选：引用块内加粗文字仍保持楷体，但加粗 */
 .td-content blockquote strong,
 .td-content blockquote b {
-  font-family: "KaiTi", "STKaiti", "Kai", "楷体", "BiaoKai", "Noto Serif CJK SC",
-    serif;
+  font-family: $font-kai;
   font-weight: bold;
 }
 
-.td-content header+p strong {
+.td-content header + p strong {
   display: block;
   text-align: center;
   font-size: x-large;
@@ -212,7 +214,7 @@ $td-enable-google-fonts: true;
   line-height: 1.5;
 }
 
-.td-content .two-lines>span {
+.td-content .two-lines > span {
   width: 100%;
   white-space: nowrap;
   text-align: justify;
