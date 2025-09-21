@@ -48,7 +48,6 @@ jobs:
 
       - name: Build Site
         run: |
-          echo "${REPO_OWNER}"
           hugo --gc --minify --baseURL https://${REPO_OWNER}.github.io
 
       - name: Setup pages

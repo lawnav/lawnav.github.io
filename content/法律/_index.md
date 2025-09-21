@@ -4,7 +4,7 @@ linkTitle: 法律
 type: "docs"
 cascade:
   type: "docs"
-menu: {main: {weight: 2 }}
+menu: {main: {weight: 2, pre: "<i class='fa-solid fa-gavel'></i>"}}
 ---
 
 <details class="doc-details">

@@ -4,7 +4,7 @@ linkTitle: 行政法规
 type: "docs"
 cascade:
   type: "docs"
-menu: {main: {weight: 3 }}
+menu: {main: {weight: 3, pre: "<i class='fa-solid fa-building'></i>"}}
 ---
 
 <details class="doc-details">
