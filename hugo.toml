@@ -1,20 +1,16 @@
-baseURL = 'https://qundao.github.io/law-book'
+baseURL = 'https://lawnav.github.io/'
 title = '中国法律法规在线文库'
+
 # 语言设置
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 defaultContentLanguageInSubdir = false
 hasCJKLanguage = true
 # enableEmoji = true
-
-# Language settings
 contentDir = "content/"
-# Useful when translating.
 enableMissingTranslationPlaceholders = false
 
 enableRobotsTXT = true
-
-# Will give values to .Lastmod etc.
 enableGitInfo = true
 
 # Comment out to disable taxonomies in Docsy
@@ -22,8 +18,6 @@ enableGitInfo = true
 
 # hugo module configuration
 [module]
-# Uncomment the next line to build and serve using local docsy clone declared in the named Hugo workspace:
-# workspace = "docsy.work"
 [module.hugoVersion]
 extended = true
 min = "0.146.0"
@@ -152,8 +146,8 @@ footer_about_enable = false
 # navbar_logo = "/img/logo.png"
 [params.ui.feedback]
 enable = true
-yes = '感谢支持! 如有新需求请访问 <a href="https://github.com/qundao/law-book/issues/new">提交Issue</a>.'
-no = '很遗憾，如有问题请访问 <a href="https://github.com/qundao/law-book/issues/new">提交Issue</a>.'
+yes = '感谢支持，如有新需求请访问 🔗<a href="https://github.com/qundao/law-book/issues/new">提交Issue</a>。'
+no = '很遗憾，如有问题请访问 🔗<a href="https://github.com/qundao/law-book/issues/new">提交Issue</a>。'
 
 [params.ui.readingtime]
 enable = true
