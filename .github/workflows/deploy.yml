@@ -25,7 +25,6 @@ jobs:
       HUGO_VERSION: latest
       HUGO_ENVIRONMENT: production
       # TZ: America/Los_Angeles
-      USER: qundao
       REPO_OWNER: ${{ github.repository_owner }}
       REPO_NAME: ${{ github.event.repository.name }}
 

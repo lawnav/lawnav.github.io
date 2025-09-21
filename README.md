@@ -8,13 +8,13 @@
 目前仅包括全国性法律法规（超过两千件，包括已废止的文档），而地方性法规数量较多暂未纳入。
 `docx/doc`文档参见仓库（定期自动更新）：
 
-- 全国法律法规 [qundao/law-docx-v1](https://github.com/qundao/law-docx-v1)
-- 地方法规 [qundao/law-docx-v2](https://github.com/qundao/law-docx-v2)
+- 全国法律法规 [lawnav/law-flk-vol1](https://github.com/lawnav/law-flk-vol1)
+- 地方法规 [lawnav/law-flk-vol2](https://github.com/lawnav/law-flk-vol2)
 
 网站资源：
 
 - 网站使用 Hugo + 主题 [google/docsy](https://github.com/google/docsy) 搭建。
-- 网站LOGO来自 [🔗 Law icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/law "law icons")
+- 网站LOGO修改自 [🔗 svgrepo.com](https://www.svgrepo.com/ "justice")
 - 背景图片来自网络。
 - 搜索功能尚未完善，搜索结果不太准确。
 
