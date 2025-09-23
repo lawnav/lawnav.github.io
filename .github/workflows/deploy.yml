@@ -18,9 +18,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    runs-on: ubuntu-latest  
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
+
     env:
       HUGO_VERSION: latest
       HUGO_ENVIRONMENT: production

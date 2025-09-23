@@ -4,7 +4,7 @@ linkTitle: 司法解释
 type: "docs"
 cascade:
   type: "docs"
-menu: {main: {weight: 5, pre: "<i class='fa-solid fa-scroll'></i>"}}
+menu: {main: {weight: 5, pre: "<i class='fa-solid fa-scroll'></i>" }}
 ---
 
 <details class="doc-details">

@@ -4,7 +4,7 @@ linkTitle: 宪法
 type: "docs"
 cascade:
   type: "docs"
-menu: {main: {weight: 1, pre: "<i class='fa-solid fa-star'></i>"}}
+menu: {main: {weight: 1, pre: "<i class='fa-solid fa-star'></i>" }}
 ---
 
 <details class="doc-details">

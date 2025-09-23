@@ -37,3 +37,4 @@
 - [🔗 北大法宝·法律法规数据库](https://www.pkulaw.com/law)
 - [🔗 国家市场监督管理总局·市场监管法律法规规章数据库](https://sjfg.samr.gov.cn/law/pageInfo/main.main)
 - [🔗 国家标准化管理委员会·法律法规](https://www.sac.gov.cn/xxgk/flfg/index.html)
+- [🔗 法律法规数据库 falvdb](https://falvdb.com/)
