@@ -10,13 +10,11 @@ $secondary: #8c4356;
 $td-enable-google-fonts: true;
 
 /* 字体 */
-$font-kai: "KaiTi", "STKaiti", "Kai", "楷体", "BiaoKai", "BiaoKai SC",
-  "Kaiti SC", "Noto Serif CJK SC", "Noto Serif SC", cursive, serif;
-$font-sans: "PingFang SC", "SimHei", "黑体", "Microsoft YaHei", "微软雅黑",
-  "STHeiti", "Heiti SC", "Hiragino Sans GB", "WenQuanYi Micro Hei",
+$font-kai: "KaiTi", "STKaiti", "Kai", "楷体", serif;
+$font-sans: "PingFang SC", "SimHei", "STHeiti", "黑体", "Microsoft YaHei", "微软雅黑",
   "Noto Sans CJK SC", "Noto Sans SC", sans-serif;
 $font-serif: "FangSong", "STFangsong", "仿宋", "SimSun", "STSong", "宋体",
-  "NSimSun", "Songti SC", "Noto Serif CJK SC", "Noto Serif SC", serif;
+  "Noto Serif CJK SC", "Noto Serif SC", serif;
 
 .pagination a {
   margin: 0 5px;

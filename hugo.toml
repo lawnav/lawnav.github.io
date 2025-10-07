@@ -13,6 +13,15 @@ enableMissingTranslationPlaceholders = false
 enableRobotsTXT = true
 enableGitInfo = true
 
+# Highlighting config
+pygmentsCodeFences = true
+pygmentsUseClasses = false
+# Use the new Chroma Go highlighter in Hugo.
+pygmentsUseClassic = false
+#pygmentsOptions = "linenos=table"
+# See https://help.farbox.com/pygments.html
+pygmentsStyle = "tango"
+# disableKinds = ["RSS"]
 # Comment out to disable taxonomies in Docsy
 # disableKinds = ["taxonomy"]
 
@@ -31,35 +40,6 @@ tag = "tags"
 category = "categories"
 year = "years"
 keyword = "keywords"
-
-[params.taxonomy]
-# set taxonomyCloud = [] to hide taxonomy clouds
-taxonomyCloud = ["tags", "categories", "years", "keywords"]
-
-# If used, must have same length as taxonomyCloud
-taxonomyCloudTitle = ["【标签】", "【分类】", "【年份】", "【关键词】"]
-
-# set taxonomyPageHeader = [] to hide taxonomies on the page headers
-taxonomyPageHeader = ["tags", "categories", "years", "keywords"]
-taxonomyPageHeaderTitle = ["标签", "分类", "年份", "关键词"]
-tag = "标签"
-category = "分类"
-tags = "标签"
-categories = "分类"
-year = "年份"
-years = "年份"
-keyword = "关键词"
-keywords = "关键词"
-
-# Highlighting config
-pygmentsCodeFences = true
-pygmentsUseClasses = false
-# Use the new Chroma Go highlighter in Hugo.
-pygmentsUseClassic = false
-#pygmentsOptions = "linenos=table"
-# See https://help.farbox.com/pygments.html
-pygmentsStyle = "tango"
-# disableKinds = ["RSS"]
 
 # Configure how URLs look like per section.
 [permalinks]
@@ -158,6 +138,23 @@ enable = true
 
 [params.page]
 pageSize = 50 # list页面每页项数
+
+[params.taxonomy]
+taxonomyCloud = ["tags", "categories", "years", "keywords"]
+taxonomyCollapse = true
+# taxonomyPageHeader = []
+
+[params.taxonomy.taxonomyCloudTitleMap]
+tags = "【标签】"
+categories = "【分类】"
+years = "【年份】"
+keywords = "【关键词】"
+
+[params.taxonomy.taxonomyAliasMap]
+year = "年份"
+years = "年份"
+keyword = "关键词"
+keywords = "关键词"
 
 # [params.links]
 # # End user relevant links. These will show up on left side of footer and in the community page if you have one.
