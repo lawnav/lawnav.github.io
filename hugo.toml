@@ -101,9 +101,13 @@ section = ["HTML", "RSS"] # "print",
 # gcs_engine_id = ""
 
 # Enable Lunr.js offline search
-offlineSearch = true
-offlineSearchSummaryLength = 200
-offlineSearchMaxResults = 25
+# offlineSearch = true
+# offlineSearchSummaryLength = 200
+# offlineSearchMaxResults = 25
+[params.search.algolia]
+appId = "3X0X6KF7SS"
+apiKey = "cd70b06ccd99eeeb94ebca076c1c0a98"
+indexName = "lawnav"
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = true
