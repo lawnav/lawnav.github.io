@@ -5,7 +5,7 @@
     {{ $singular := partial "taxonomy_title.html" (dict "context" . "taxo" .Data.Singular) }}
     {{ $plural := partial "taxonomy_title.html" (dict "context" . "taxo" .Data.Plural) }}
 
-    <h1>{{ $singular }}: <span>{{ .Title }}</span></h1>
+    <h1>{{ $singular }}: <span>{{ .Title }} ({{ len .Pages }}) </span></h1>
     <div>
       {{ .Content }}
     </div>
