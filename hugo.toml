@@ -78,11 +78,16 @@ style = "tango"
 # Comment out if you don't want the "print entire section" link enabled.
 [outputs]
 section = ["HTML", "RSS"] # "print",
-
+home = ['html', 'rss']
+page = ['html']
 
 # Everything below this are Site Params
 [params]
+reading_speed = 400
+
 # privacy_policy = "https://policies.google.com/privacy"
+# Enable syntax highlighting and copy buttons on code blocks with Prism
+# prism_syntax_highlighting = true
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
@@ -108,9 +113,6 @@ section = ["HTML", "RSS"] # "print",
 appId = "3X0X6KF7SS"
 apiKey = "cd70b06ccd99eeeb94ebca076c1c0a98"
 indexName = "lawnav"
-
-# Enable syntax highlighting and copy buttons on code blocks with Prism
-prism_syntax_highlighting = true
 
 [params.copyright]
 authors = "LawNav | 建站 [Hugo](https://gohugo.io/) | 主题 [Docsy](https://www.docsy.dev/)"
