@@ -169,5 +169,5 @@ keywords = "关键词"
 # #   desc = "Discussion and help from your fellow users"
 
 [services]
-  [services.disqus]
-    shortname = 'lawnav'
+[services.disqus]
+shortname = 'lawnav'

@@ -1,0 +1,39 @@
+<div class="page-blank">
+  <div class="giscus">
+  <script src="https://giscus.app/client.js"
+          data-repo="lawnav/lawnav.github.io"
+          data-repo-id="R_kgDOPzfoPg"
+          data-category="Announcements"
+          data-category-id="DIC_kwDOPzfoPs4CvrI2"
+          data-mapping="pathname"
+          data-strict="1"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="top"
+          data-theme="preferred_color_scheme"
+          data-lang="zh-CN"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+  </script>
+  <noscript>
+      Please enable JavaScript to view the comments powered by <a href="https://giscus.app/">giscus</a>.
+  </noscript>
+  </div>
+  <hr>
+
+{{/* https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_partials/disqus.html */}}
+  <div id="disqus_thread"></div>
+  <script>
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = '{{ printf "https://%s.disqus.com/embed.js" .Site.Config.Services.Disqus.Shortname }}';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>
+    Please enable JavaScript to view the <a href="https://disqus.com/">comments powered by Disqus.</a>
+  </noscript>
+
+</div>
