@@ -2,8 +2,7 @@
 title: 宪法
 linkTitle: 宪法
 type: "docs"
-cascade:
-  type: "docs"
+cascade: { type: "docs" }
 menu: {main: {weight: 1, pre: "<i class='fa-solid fa-star'></i>" }}
 ---
 

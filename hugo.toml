@@ -110,11 +110,10 @@ reading_speed = 400
 # offlineSearchSummaryLength = 200
 # offlineSearchMaxResults = 25
 [params.search.algolia]
-container = "#docsearch"
 indexName = "algolia_site_articles"
 appId = "3X0X6KF7SS"
 apiKey = "cd70b06ccd99eeeb94ebca076c1c0a98"
-# askAi = ""
+
 
 [params.copyright]
 authors = "LawNav | 建站 [Hugo](https://gohugo.io/) | 主题 [Docsy](https://www.docsy.dev/)"

@@ -2,13 +2,12 @@
 title: 行政法规
 linkTitle: 行政法规
 type: "docs"
-cascade:
-  type: "docs"
+cascade: { type: "docs" }
 menu: {main: {weight: 3, pre: "<i class='fa-solid fa-building'></i>" }}
 ---
 
 <details class="doc-details">
-<summary><strong>行政法规</strong>统计：共有794件，其中有效共603件</summary>
+<summary><strong>行政法规</strong>统计：共有798件，其中有效共603件</summary>
 {{% pageinfo %}}
 
 **行政法规**说明：
@@ -23,12 +22,13 @@ menu: {main: {weight: 3, pre: "<i class='fa-solid fa-building'></i>" }}
 
 ---
 
-**行政法规** 相关文本共有794件，其中：
+**行政法规** 相关文本共有798件，其中：
 
+- 尚未生效: 2
 - 有效: 603
-- 已修改: 114
+- 已修改: 115
 - 已废止: 65
-- 未知: 12
+- 未知: 13
 
 {{% /pageinfo %}}
 </details>

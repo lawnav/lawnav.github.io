@@ -2,13 +2,12 @@
 title: 司法解释
 linkTitle: 司法解释
 type: "docs"
-cascade:
-  type: "docs"
+cascade: { type: "docs" }
 menu: {main: {weight: 5, pre: "<i class='fa-solid fa-scroll'></i>" }}
 ---
 
 <details class="doc-details">
-<summary><strong>司法解释</strong>统计：共有866件，其中有效共552件</summary>
+<summary><strong>司法解释</strong>统计：共有867件，其中有效共552件</summary>
 {{% pageinfo %}}
 
 **司法解释**说明：
@@ -21,11 +20,11 @@ menu: {main: {weight: 5, pre: "<i class='fa-solid fa-scroll'></i>" }}
 
 ---
 
-**司法解释** 相关文本共有866件，其中：
+**司法解释** 相关文本共有867件，其中：
 
 - 有效: 552
 - 已修改: 134
-- 已废止: 146
+- 已废止: 147
 - 未知: 34
 
 {{% /pageinfo %}}

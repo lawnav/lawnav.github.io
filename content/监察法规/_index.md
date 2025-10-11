@@ -2,8 +2,7 @@
 title: 监察法规
 linkTitle: 监察法规
 type: "docs"
-cascade:
-  type: "docs"
+cascade: { type: "docs" }
 menu: {main: {weight: 4, pre: "<i class='fa-solid fa-shield-halved'></i>" }}
 ---
 

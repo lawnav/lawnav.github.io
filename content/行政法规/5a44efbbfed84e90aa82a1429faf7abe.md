@@ -23,10 +23,6 @@ years:
 - 2024年
 keywords:
 - 实施细则
-- 专利法
-- 修改
-- 中华人民共和国
-- 决定
 urls:
 - https://flk.npc.gov.cn/detail?id=5a44efbbfed84e90aa82a1429faf7abe
 ---

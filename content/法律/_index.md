@@ -2,8 +2,7 @@
 title: 法律
 linkTitle: 法律
 type: "docs"
-cascade:
-  type: "docs"
+cascade: { type: "docs" }
 menu: {main: {weight: 2, pre: "<i class='fa-solid fa-gavel'></i>" }}
 ---
 
