@@ -24,7 +24,7 @@ jobs:
       CODE: ${{ secrets.REPO }}
       DATA: ${{ secrets.DATA }}
       SRC_NAME: source
-      COUNT: 250
+      DATA_NAME: data
 
     steps:
       - uses: actions/checkout@v4
@@ -43,7 +43,7 @@ jobs:
         with:
           repository: ${{ env.USER }}/${{ env.DATA }}
           token: ${{ secrets.GH_TOKEN }}
-          path: ${{ env.DATA }}
+          path: ${{ env.DATA_NAME }}
           fetch-depth: 1
           ref: ${{ github.ref }}
 
@@ -60,11 +60,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
-      - name: Run convert Docx
+      - name: Run format markdown
         run: |
-          echo "Update count = $COUNT"
           pushd ${SRC_NAME} && 
-          bash scripts/process-format.sh ${DATA} content -1 &
+          bash scripts/process-format.sh ${DATA_NAME} content -1 &
           popd
 
       - name: Git auto commit
