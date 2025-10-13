@@ -8,9 +8,78 @@ on:
       - "README.md"
       - ".gitignore"
   workflow_dispatch:
+  schedule:
+    - cron: "5 5 * * 6"
 
 jobs:
+  process:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    permissions:
+      contents: write
+    env:
+      USER: ${{ github.repository_owner }}
+      REPO: ${{ github.event.repository.name }}
+      CODE: ${{ secrets.REPO }}
+      DATA: ${{ secrets.DATA }}
+      SRC_NAME: source
+      COUNT: 250
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Checkout src repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.USER }}/${{ env.CODE }}
+          token: ${{ secrets.GH_TOKEN }}
+          path: ${{ env.SRC_NAME }}
+          fetch-depth: 1
+          ref: ${{ github.ref }}
+
+      - name: Checkout data repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.USER }}/${{ env.DATA }}
+          token: ${{ secrets.GH_TOKEN }}
+          path: ${{ env.DATA }}
+          fetch-depth: 1
+          ref: ${{ github.ref }}
+
+      - name: Set up Python 3
+        uses: actions/setup-python@v6
+        with:
+          python-version: 3.x
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip # -${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Run convert Docx
+        run: |
+          echo "Update count = $COUNT"
+          pushd ${SRC_NAME} && 
+          bash scripts/process-format.sh ${DATA} content -1 &
+          popd
+
+      - name: Git auto commit
+        uses: stefanzweifel/git-auto-commit-action@v6
+        with:
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          commit_author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          commit_message: Automated update
+          # commit_options: '--no-verify --signoff'
+          # push_options: "--force"
+          file_pattern: "content"
+
   deploy:
+    needs: process
     permissions:
       pages: write
       id-token: write
