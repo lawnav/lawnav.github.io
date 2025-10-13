@@ -10,22 +10,27 @@ effective_date: '2024-01-20'
 status: 未知
 group: 修改、废止的决定
 categories:
-- 行政法规
-- 修改、废止的决定
+  - 行政法规
+  - 修改、废止的决定
 tags:
-- 国务院
-- 未知
-- 专利法
-- 细则
-- 决定
+  - 国务院
+  - 未知
+  - 专利法
+  - 细则
+  - 决定
 years:
-- 2023年
-- 2024年
+  - 2023年
+  - 2024年
 keywords:
-- 实施细则
+  - 行政部门
+  - 专利权
+  - 期限
+  - 国际
+  - 专利申请
 urls:
-- https://flk.npc.gov.cn/detail?id=5a44efbbfed84e90aa82a1429faf7abe
+  - https://flk.npc.gov.cn/detail?id=5a44efbbfed84e90aa82a1429faf7abe
 ---
+
 
 国务院关于修改《中华人民共和国
 

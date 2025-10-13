@@ -19,3 +19,6 @@ package-lock.json
 trash/
 temp/
 themes/
+source/
+law-*/
+data/

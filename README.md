@@ -34,7 +34,7 @@
 - [🔗 外交部·条约数据库](https://treaty.mfa.gov.cn/web/index.jsp)
 - [🔗 最高人民检察院·检察法律法规数据库](https://www.spp.gov.cn/spp/flfgk/index.shtml)
 - [🔗 中国法院网·法律文库](https://www.chinacourt.cn/law.shtml)
-- [🔗 北大法宝·法律法规数据库](https://www.pkulaw.com/law)
+- [🔗 北大法宝·法律法规数据库](https://www.pkulaw.com/law), [🔗 北大法宝·中国法律检索系统](https://law.pkulaw.com/)
 - [🔗 国家市场监督管理总局·市场监管法律法规规章数据库](https://sjfg.samr.gov.cn/law/pageInfo/main.main)
 - [🔗 国家标准化管理委员会·法律法规](https://www.sac.gov.cn/xxgk/flfg/index.html)
 - [🔗 法律法规数据库 falvdb](https://falvdb.com/)
