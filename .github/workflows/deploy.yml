@@ -12,65 +12,65 @@ on:
     - cron: "5 5 * * 6"
 
 jobs:
-  # process:
-  #   runs-on: ubuntu-latest
-  #   timeout-minutes: 25
+  process:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
 
-  #   permissions:
-  #     contents: write
-  #   env:
-  #     USER: ${{ github.repository_owner }}
-  #     REPO: ${{ github.event.repository.name }}
-  #     CODE: ${{ secrets.REPO }}
-  #     DATA: ${{ secrets.DATA }}
-  #     SRC_NAME: source
-  #     DATA_NAME: data
+    permissions:
+      contents: write
+    env:
+      USER: ${{ github.repository_owner }}
+      REPO: ${{ github.event.repository.name }}
+      CODE: ${{ secrets.REPO }}
+      DATA: ${{ secrets.DATA }}
+      SRC_NAME: source
+      DATA_NAME: data
 
-  #   steps:
-  #     - uses: actions/checkout@v4
+    steps:
+      - uses: actions/checkout@v4
 
-  #     - name: Checkout src repo
-  #       uses: actions/checkout@v4
-  #       with:
-  #         repository: ${{ env.USER }}/${{ env.CODE }}
-  #         token: ${{ secrets.GH_TOKEN }}
-  #         path: ${{ env.SRC_NAME }}
-  #         fetch-depth: 1
-  #         ref: ${{ github.ref }}
+      - name: Checkout src repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.USER }}/${{ env.CODE }}
+          token: ${{ secrets.GH_TOKEN }}
+          path: ${{ env.SRC_NAME }}
+          fetch-depth: 1
+          ref: ${{ github.ref }}
 
-  #     - name: Checkout data repo
-  #       uses: actions/checkout@v4
-  #       with:
-  #         repository: ${{ env.USER }}/${{ env.DATA }}
-  #         token: ${{ secrets.GH_TOKEN }}
-  #         path: ${{ env.DATA_NAME }}
-  #         fetch-depth: 1
-  #         ref: ${{ github.ref }}
+      - name: Checkout data repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.USER }}/${{ env.DATA }}
+          token: ${{ secrets.GH_TOKEN }}
+          path: ${{ env.DATA_NAME }}
+          fetch-depth: 1
+          ref: ${{ github.ref }}
 
-  #     - name: Set up Python 3
-  #       uses: actions/setup-python@v6
-  #       with:
-  #         python-version: 3.x
+      - name: Set up Python 3
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
 
-  #     - name: Run format markdown
-  #       run: |
-  #         pushd ${SRC_NAME} && 
-  #         bash scripts/process-format.sh ${DATA_NAME} content -1 &
-  #         popd
+      - name: Run format markdown
+        run: |
+          pushd ${SRC_NAME} && 
+          bash scripts/process-format.sh ${DATA_NAME} content -1 &&
+          popd
 
-  #     - name: Git auto commit
-  #       uses: stefanzweifel/git-auto-commit-action@v6
-  #       with:
-  #         commit_user_name: "github-actions[bot]"
-  #         commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
-  #         commit_author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
-  #         commit_message: Automated update
-  #         # commit_options: '--no-verify --signoff'
-  #         # push_options: "--force"
-  #         file_pattern: "content"
+      - name: Git auto commit
+        uses: stefanzweifel/git-auto-commit-action@v6
+        with:
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          commit_author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          commit_message: Automated update
+          # commit_options: '--no-verify --signoff'
+          # push_options: "--force"
+          file_pattern: "content"
 
   deploy:
-    # needs: process
+    needs: process
     permissions:
       pages: write
       id-token: write
